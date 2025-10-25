@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	color: white;
+	padding: 1rem;
+	line-height: 1.7rem;
+	background-color: #212121;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu-container > ul{
+	list-style-type: none;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.menu-container ul li a {
+	color: white;
+	text-decoration: none;
+}
