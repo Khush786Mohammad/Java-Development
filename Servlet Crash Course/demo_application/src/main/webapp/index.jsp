@@ -13,6 +13,11 @@
 		<%@ include file="menu.jsp" %>
 		<h1>Crash Course</h1>
 		<p> This is a servlet crash course requirement for learning spring and spring boot.</p>
+
+		<form action="<%= application.getContextPath() %>/third" method="post">
+			<input type="text" placeholder="Enter Text" name="message">	
+			<button type="submit">Submit</button>
+		</form>
 	</div>
 	
 	<script src="<%= application.getContextPath() %>/script/index.js"> </script>
