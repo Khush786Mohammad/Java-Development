@@ -5,9 +5,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="<%= application.getContextPath() %>/css/styles.css" />
 </head>
 <body>
 	<div class="container">
+	<%@ include file="menu.jsp" %>
 		Hi we teach servlet, spring and spring boot.
 	</div>
 	

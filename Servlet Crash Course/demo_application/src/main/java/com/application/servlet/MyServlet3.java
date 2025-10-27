@@ -21,8 +21,10 @@ public class MyServlet3 extends HttpServlet {
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
-		String message = req.getParameter("message");
-		System.out.println("Message from user is " +message);
+		String name = req.getParameter("username");
+		String pass = req.getParameter("password");
+		System.out.println("Username is " +name);
+		System.out.println("Password is " +pass);
 		System.out.println("Form Submitted Successfully");
 		
 		res.setContentType("text/html");
@@ -30,15 +32,16 @@ public class MyServlet3 extends HttpServlet {
 		Date date = new Date();
 		
 		writer.print(
-					"<h1>Form Submitted Successfully</h1>"
+					"<h1>Login Successfully</h1>"
 				);
 		
 		writer.print("""
-					<h2>Message : %s</h2>
+					<h2>Username : %s</h2>
+					<h2>Password : %s</h2>
 					<h3>Date: %s</h3>
-				""".formatted(message, date));
+				""".formatted(name, pass, date));
 		
-		res.setStatus(500);
+		res.setStatus(200);
 		
 	}
 	

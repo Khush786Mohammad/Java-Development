@@ -9,7 +9,7 @@ import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebServlet;
 
-@WebServlet("/first")
+@WebServlet("/lambo")
 public class MyServlet implements Servlet{
 	
 	private ServletConfig servletConfig;
