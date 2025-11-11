@@ -16,9 +16,9 @@
           <a class="nav-link disabled" aria-disabled="true">Services</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
+      <form class="d-flex" role="search" action="<%= application.getContextPath()%>/logout" method="GET">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-light" type="submit">Search</button>
+        <button class="btn btn-outline-light" type="submit">Logout</button>
       </form>
     </div>
   </div>

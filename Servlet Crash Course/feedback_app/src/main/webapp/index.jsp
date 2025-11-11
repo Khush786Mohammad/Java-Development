@@ -10,8 +10,10 @@
   
   	<%@include file="header.jsp" %>
   	
-  	<div style="height: 85vh" class="content-container py-6 d-flex flex-column justify-content-center align-items-center">
+  	<div style="height: 85vh" class="content-container py-6 d-flex flex-column justify-content-center align-items-center gap-2">
   		<a href="<%= application.getContextPath() %>/feedback.jsp" class="btn btn-dark w-25">Give Feedback</a>
+  		<a href="<%= application.getContextPath() %>/servlet1" class="btn btn-dark w-25">Go To Servlet 1</a>
+  		 <a href="<%= application.getContextPath() %>/servlet2" class="btn btn-dark w-25">Go To Servlet 2</a>
   	</div>
     <%@include file="scripts.jsp" %>
   </body>
