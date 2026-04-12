@@ -18,25 +18,23 @@ public class Request1Servlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String username = "khush";
 		String userId = "123";
-		
+
 		Cookie cookie = new Cookie("username", username);
-		cookie.setMaxAge(60*60);
+		cookie.setMaxAge(60 * 60);
 		resp.addCookie(cookie);
-		
+
 		cookie = new Cookie("userId", userId);
-		cookie.setMaxAge(60*60);
+		cookie.setMaxAge(60 * 60);
 		resp.addCookie(cookie);
-		
+
 //		resp.setStatus(201);
-		
-		
-		//httpSession
+
+		// httpSession
 		String jwt = "fdaskdfjl1231235416@4356";
 		HttpSession session = req.getSession();
-		session.setAttribute("jwt_Token",jwt);
+		session.setAttribute("jwt_Token", jwt);
 		session.setAttribute("userSecret", UUID.randomUUID().toString());
-		session.setMaxInactiveInterval(60*10);
+		session.setMaxInactiveInterval(60 * 10);
 	}
-	
-	
+
 }
