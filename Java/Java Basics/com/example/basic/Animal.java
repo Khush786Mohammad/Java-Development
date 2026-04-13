@@ -17,11 +17,13 @@ class Species extends Object {
 class Dog extends Species {
     private String breed;
     public Dog() {
+        // Inter-Class Contructor Chaining: Calls the parameterized constructor of Species with default values.
         super("Mia", 4  );
         System.out.println("Dog created with default values.");
     }
 
     public Dog(String name, int legs, String breed) {
+        // Intra-Class Constructor Chaining.
         this(); // Calls the default constructor of Dog, which calls the parameterized constructor of Species
         this.breed = breed;
         System.out.println("Dog created with name: " + name + ", legs: " + legs + ", and breed: " + breed   );
