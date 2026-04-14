@@ -58,7 +58,7 @@ public class JavaAdv {
             }
         };
         anonymousObj.createAnonymousClass();
-
+        
         Human human = new Human();
         human.birth();
         human.death();
