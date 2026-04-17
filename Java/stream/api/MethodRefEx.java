@@ -30,6 +30,6 @@ public class MethodRefEx {
         List<Student> myStudents = studentList.stream().map((std) -> new Student(std,18)).toList();
         myStudents.forEach((stds) -> System.out.println(stds.toString()));
 
-        studentList.get(2).length()
+        studentList.get(2).length();
     }
 }
